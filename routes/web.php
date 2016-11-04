@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/practice', function() {
+    echo App::environment();
+});
+
+Route::post('/practice', function() {
+
+    $input =  Input::all();
+    print_r($input + "hola");
+
+});
